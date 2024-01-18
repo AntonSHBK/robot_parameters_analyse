@@ -1,0 +1,11 @@
+# Math
+matplotlib
+scipy
+numpy
+pandas
+
+# Jupyter
+notebook==7.0.4
+
+# PyTorch
+torch==2.1.0
