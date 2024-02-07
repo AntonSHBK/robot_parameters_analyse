@@ -54,8 +54,8 @@ class MyDataset(Dataset):
         x = data[self.input_colums].values
         y = data[self.output_colums].values
         
-        self.x_train = torch.tensor(x, dtype=torch.float32)
-        self.y_train = torch.tensor(y, dtype=torch.float32)      
+        self.x_train = torch.tensor(x, dtype=torch.float64)
+        self.y_train = torch.tensor(y, dtype=torch.float64)      
         
     def __len__(self):
         return len(self.y_train)
@@ -232,24 +232,24 @@ class LoadModel():
         # print('Денормализованные данные:', pred)
         return pred 
 if __name__ == '__main__':
-    # # First star
-    # data_1_path = Path("data/DataSet900.csv")
-    # data_2_path = Path("data/DataSet1000.csv")
-    # data_3_path = Path("data/DataSet100000.csv")
-    # data_4_path = Path("data/DataSet129600.csv")
+    # First star
+    data_1_path = Path("data/DataSet900.csv")
+    data_2_path = Path("data/DataSet1000.csv")
+    data_3_path = Path("data/DataSet100000.csv")
+    data_4_path = Path("data/DataSet129600.csv")
 
-    # dataset = load_data(data_1_path)
+    dataset = load_data(data_1_path)
 
-    # trainer = Trainer(
-    #     data=dataset,
-    #     input_colums=['criteria1', 'criteria2'],
-    #     output_colums=['parameter1', 'parameter2'],
-    #     batch_size=60,
-    #     learning_rate=0.001,
-    #     random_state=30
-    # )
-    # trainer.run(300)
-    # trainer.save_model()
+    trainer = Trainer(
+        data=dataset,
+        input_colums=['criteria1', 'criteria2'],
+        output_colums=['parameter1', 'parameter2'],
+        batch_size=60,
+        learning_rate=0.001,
+        random_state=30
+    )
+    trainer.run(15)
+    trainer.save_model()
 
     # Next starts
     load_model = LoadModel(
