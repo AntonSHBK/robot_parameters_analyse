@@ -188,8 +188,8 @@ class Trainer:
 
 class TrainingManager:
     def __init__(self, 
-                 features: list[str], 
-                 targets: list[str],
+                 features, 
+                 targets,
                  dataset: pd.DataFrame,
                  model_params: dict={}, 
                  train_params: dict={},
