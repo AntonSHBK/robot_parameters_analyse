@@ -1,6 +1,6 @@
 # Разработка и анализ нейронной сети для обработки данных кинематики роботов
 
-![Фон](https://github.com/AntonSHBK/simple_robot_parameters_analyse/blob/main/article_imgs/face.webp?raw=true)
+![Фон](https://github.com/AntonSHBK/simple_robot_parameters_analyse/blob/main/article_imgs/face.png?raw=true)
 
 **Содержание:**
 
