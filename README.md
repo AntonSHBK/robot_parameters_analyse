@@ -24,19 +24,6 @@ pip install -r requirements.txt
 [Исходный датасет](https://github.com/AntonSHBK/simple_robot_parameters_analyse/blob/main/data/DataSet900.csv)
 
 <div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
-</style>
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
