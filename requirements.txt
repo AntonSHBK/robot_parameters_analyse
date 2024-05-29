@@ -9,6 +9,9 @@ notebook==7.0.4
 
 # PyTorch
 torch==2.1.0
+tensorboard
+torchviz
+graphviz
 
 # Other
 tqdm
